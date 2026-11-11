@@ -1,0 +1,5 @@
+2026-11-10 10:00:00 INFO Application started successfully
+2026-11-10 10:01:00 WARN High memory usage detected
+2026-11-10 10:02:00 ERROR Database connection failed
+2026-11-10 10:03:00 INFO Database connection restored
+2026-11-10 10:04:00 ERROR API request failed with status 500

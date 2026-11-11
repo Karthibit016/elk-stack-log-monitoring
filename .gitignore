@@ -1,0 +1,26 @@
+
+# Secrets and credentials
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+*.crt
+*.cer
+*.keystore
+*.jks
+
+# Elasticsearch and Logstash data
+data/
+logs/
+logstash.keystore
+
+# Filebeat registry and runtime data
+registry/
+meta.json
+
+# Operating system files
+.DS_Store
+Thumbs.db
+

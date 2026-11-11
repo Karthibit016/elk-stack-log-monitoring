@@ -1,0 +1,28 @@
+
+# ============================== Filebeat Inputs ===============================
+
+filebeat.inputs:
+  - type: filestream
+    id: application-logs-input
+    enabled: true
+    paths:
+      - /opt/elk-project/logs/application.log
+
+# ============================== General =======================================
+
+name: application-log-collector
+
+# ============================== Output ========================================
+
+output.logstash:
+  hosts: ["localhost:5044"]
+
+# ============================== Logging =======================================
+
+logging.level: info
+logging.to_files: true
+logging.files:
+  path: /var/log/filebeat
+  name: filebeat
+  keepfiles: 7
+  permissions: 0640
